@@ -1,0 +1,164 @@
+{
+  "characters": [
+    {
+      "id": "liora",
+      "name": {
+        "en": "Liora",
+        "vi": "Liora"
+      },
+      "division": {
+        "en": "The Silent Institute",
+        "vi": "Viện Thầm Lặng"
+      },
+      "role": {
+        "en": "Convent Maiden",
+        "vi": "Thiếu nữ tu viện"
+      },
+      "age": 13,
+      "height_cm": 149,
+      "description": {
+        "en": "A young maiden of the Silent Institute, tucked away behind the Santuario Della Rosa. Liora lived a quiet life, her days repeating to the rhythm of church bells, classes, and familiar prayers—until a chance meeting at the bell tower caused the world around her to stir, breaking the silence she once knew.",
+        "vi": "Một thiếu nữ trẻ của Viện Thầm Lặng, sống phía sau Santuario Della Rosa. Liora từng có cuộc sống yên bình với những ngày lặp lại theo tiếng chuông nhà thờ, lớp học và những lời cầu nguyện quen thuộc — cho đến khi một cuộc gặp gỡ tình cờ tại tháp chuông khiến thế giới quanh cô bắt đầu chuyển động, phá vỡ sự tĩnh lặng mà cô từng biết."
+      },
+      "image": "/images/characters/liora.webp"
+    },
+
+    {
+      "id": "vespera",
+      "name": {
+        "en": "Vespera",
+        "vi": "Vespera"
+      },
+      "division": {
+        "en": "The Rose Institute",
+        "vi": "Viện Hoa Hồng"
+      },
+      "role": {
+        "en": "Convent Maiden",
+        "vi": "Thiếu nữ tu viện"
+      },
+      "age": 14,
+      "height_cm": 150,
+      "description": {
+        "en": "A young maiden of the Rose Institute, nestled behind the Santuario Della Rosa. Vespera often appeared in places where no one else would go, carrying an air of detachment and a strange sense of freedom, as though she had never truly belonged within these walls.",
+        "vi": "Một thiếu nữ trẻ của Viện Hoa Hồng, sống phía sau Santuario Della Rosa. Vespera thường xuất hiện ở những nơi không ai lui tới, mang theo cảm giác xa cách và một sự tự do kỳ lạ, như thể cô chưa từng thực sự thuộc về những bức tường này."
+      },
+      "image": "/images/characters/vespera.webp"
+    },
+
+    {
+      "id": "eugenia",
+      "name": {
+        "en": "Eugenia",
+        "vi": "Eugenia"
+      },
+      "division": {
+        "en": "The Silent Institute",
+        "vi": "Viện Thầm Lặng"
+      },
+      "role": {
+        "en": "Convent Maiden",
+        "vi": "Thiếu nữ tu viện"
+      },
+      "age": 15,
+      "height_cm": 154,
+      "description": {
+        "en": "A young maiden of the Silent Institute. Eugenia stood out among the other children due to her confidence and an almost absolute belief in everything she was taught, carrying herself like someone who always wanted to be the most perfect role model in the eyes of everyone.",
+        "vi": "Một thiếu nữ trẻ của Viện Thầm Lặng. Eugenia nổi bật giữa những đứa trẻ khác nhờ sự tự tin và niềm tin gần như tuyệt đối vào mọi điều được dạy bảo, luôn cư xử như thể muốn trở thành hình mẫu hoàn hảo nhất trong mắt mọi người."
+      },
+      "image": "/images/characters/eugenia.webp"
+    },
+
+    {
+      "id": "amethyst",
+      "name": {
+        "en": "Amethyst",
+        "vi": "Amethyst"
+      },
+      "division": {
+        "en": "The Silent Institute",
+        "vi": "Viện Thầm Lặng"
+      },
+      "role": {
+        "en": "Convent Maiden",
+        "vi": "Thiếu nữ tu viện"
+      },
+      "age": 14,
+      "height_cm": 149,
+      "description": {
+        "en": "A young maiden of the Silent Institute. Amethyst always kept a calm and sharp demeanor, far beyond most children her age. She was a girl who loved to observe and judge her surroundings, used to watching everything from a safe enough distance to keep her emotions from pulling her off course.",
+        "vi": "Một thiếu nữ trẻ của Viện Thầm Lặng. Amethyst luôn giữ vẻ điềm tĩnh và sắc sảo vượt xa phần lớn những đứa trẻ cùng tuổi. Cô thích quan sát và đánh giá mọi thứ xung quanh, quen với việc đứng ở khoảng cách đủ an toàn để cảm xúc không làm mình chệch hướng."
+      },
+      "image": "/images/characters/amethyst.webp"
+    },
+
+    {
+      "id": "lucienne",
+      "name": {
+        "en": "Lucienne",
+        "vi": "Lucienne"
+      },
+      "division": {
+        "en": "The Rose Institute",
+        "vi": "Viện Hoa Hồng"
+      },
+      "role": {
+        "en": "Convent Maiden",
+        "vi": "Thiếu nữ tu viện"
+      },
+      "age": 15,
+      "height_cm": 151,
+      "description": {
+        "en": "A young maiden of the Rose Institute. Lucienne always carried a graceful and gentle demeanor, the perfect image of a child raised with great care and high expectations. Yet, behind that soft exterior lay a subtle mystery that was hard to put into words.",
+        "vi": "Một thiếu nữ trẻ của Viện Hoa Hồng. Lucienne luôn mang dáng vẻ dịu dàng và thanh lịch, như hình mẫu hoàn hảo của một đứa trẻ được nuôi dạy với sự chăm sóc và kỳ vọng lớn lao. Nhưng phía sau vẻ ngoài mềm mại ấy lại tồn tại một nét bí ẩn khó diễn tả thành lời."
+      },
+      "image": "/images/characters/lucienne.webp"
+    },
+
+    {
+      "id": "reverina",
+      "name": {
+        "en": "Reverina",
+        "vi": "Reverina"
+      },
+      "division": {
+        "en": "The Silent Institute",
+        "vi": "Viện Thầm Lặng"
+      },
+      "role": {
+        "en": "Convent Maiden",
+        "vi": "Thiếu nữ tu viện"
+      },
+      "age": 13,
+      "height_cm": 146,
+      "description": {
+        "en": "A young maiden of the Silent Institute. Reverina carried a soft and gentle presence. A child raised amidst prayers and praise, she always tried to cling to those she trusted, never realizing that this sometimes made her far too dependent.",
+        "vi": "Một thiếu nữ trẻ của Viện Thầm Lặng. Reverina mang dáng vẻ nhẹ nhàng và dịu dàng. Lớn lên giữa những lời cầu nguyện và ca tụng, cô luôn cố bám víu vào những người mình tin tưởng mà không nhận ra điều đó đôi khi khiến cô trở nên quá phụ thuộc."
+      },
+      "image": "/images/characters/reverina.webp"
+    },
+
+    {
+      "id": "valeria",
+      "name": {
+        "en": "Valeria",
+        "vi": "Valeria"
+      },
+      "division": {
+        "en": "The Silent Institute",
+        "vi": "Viện Thầm Lặng"
+      },
+      "role": {
+        "en": "Convent Maiden",
+        "vi": "Thiếu nữ tu viện"
+      },
+      "age": 15,
+      "height_cm": 153,
+      "description": {
+        "en": "A young maiden of the Silent Institute. Compared to the other children, Valeria carried a more grounded and practical air. It was as if she had long been used to the way this place worked, and the thought of resisting it had never truly crossed her mind.",
+        "vi": "Một thiếu nữ trẻ của Viện Thầm Lặng. So với những đứa trẻ khác, Valeria mang cảm giác thực tế và điềm tĩnh hơn. Như thể cô đã quá quen với cách nơi này vận hành, đến mức chưa từng thực sự nghĩ đến việc chống lại nó."
+      },
+      "image": "/images/characters/valeria.webp"
+    }
+  ]
+}
