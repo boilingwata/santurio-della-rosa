@@ -33,7 +33,7 @@ export default function Page() {
           <button
             type="button"
             aria-label="Play trailer"
-            className="group relative -mb-[150px] cursor-pointer transition-all duration-200 ease-out hover:scale-110 hover:drop-shadow-[0_0_24px_rgba(241,229,213,0.55)] active:scale-95"
+            className="group absolute bottom-8 left-1/2 z-10 -translate-x-1/2 cursor-pointer transition-all duration-200 ease-out hover:scale-110 hover:drop-shadow-[0_0_24px_rgba(241,229,213,0.55)] active:scale-95"
           >
             <Image
               src={playButton}
@@ -46,7 +46,7 @@ export default function Page() {
             />
           </button>
 
-          <div className="relative flex h-[150px] w-[460px] scale-[3] items-center justify-center overflow-hidden">
+          <div className="relative flex h-[150px] w-[460px] scale-[0.75] items-center justify-center overflow-hidden">
             <Image
               src={preregisterFrame}
               alt=""

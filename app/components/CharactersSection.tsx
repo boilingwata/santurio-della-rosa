@@ -57,8 +57,9 @@ export default function CharactersSection() {
 
       <div className="absolute inset-0 bg-[#21111c]/10" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1500px] items-end justify-between gap-[clamp(18px,3vw,52px)] px-5 pt-20 md:px-[clamp(24px,4vw,70px)]">
-        <aside className="relative hidden h-[clamp(600px,74vh,820px)] w-[clamp(245px,18vw,310px)] shrink-0 self-center md:flex md:items-center md:justify-center">
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1500px] items-end justify-between gap-[clamp(18px,3vw,52px)] overflow-hidden px-5 pt-20 md:px-[clamp(24px,4vw,70px)]">
+        <div className="flex min-w-0 flex-1 items-end gap-[clamp(6px,1vw,20px)]">
+        <aside className="relative z-20 hidden h-[clamp(600px,74vh,820px)] w-[clamp(245px,18vw,310px)] shrink-0 self-center md:flex md:items-center md:justify-center">
           <div className="relative h-[85%] w-[85%]">
             <div className="pointer-events-none absolute inset-y-0 left-0 aspect-[1653/5669] overflow-hidden">
               <div className="absolute inset-y-0 left-0 w-[200%]">
@@ -132,18 +133,19 @@ export default function CharactersSection() {
           </div>
         </aside>
 
-        <div className="relative h-[clamp(1050px,90vh,1470px)] w-[clamp(840px,87vw,1290px)] shrink-0 self-end translate-y-[clamp(24px,4vh,56px)]">
+        <div className="relative z-10 h-[clamp(720px,78vh,1020px)] w-[clamp(450px,39vw,690px)] max-w-[min(690px,calc(100%-clamp(245px,18vw,310px)-1.25rem))] shrink min-w-0 self-end translate-y-[clamp(12px,2vh,32px)]">
           <Image
             src={selectedCharacter.image}
             alt={selectedCharacter.name}
             fill
             priority
-            sizes="(min-width: 768px) 87vw, 132vw"
+            sizes="(min-width: 768px) 39vw, 88vw"
             className="object-contain object-bottom drop-shadow-[0_18px_18px_rgba(30,14,26,0.34)]"
           />
         </div>
+        </div>
 
-        <div className="mb-[clamp(90px,15vh,170px)] hidden aspect-[4/3] w-[clamp(430px,43vw,700px)] shrink rounded-[32px] bg-[#171719]/78 shadow-[0_24px_60px_rgba(19,8,17,0.42)] backdrop-blur-[2px] lg:block">
+        <div className="relative z-10 mb-[clamp(90px,15vh,170px)] hidden aspect-[4/3] w-[clamp(430px,43vw,700px)] shrink-0 rounded-[32px] bg-[#171719]/78 shadow-[0_24px_60px_rgba(19,8,17,0.42)] backdrop-blur-[2px] lg:block">
           <Image
             src={infoFrame}
             alt=""
