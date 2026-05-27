@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
+import Providers from "./components/Providers";
 import "./globals.css";
 
 const cormorant = localFont({
@@ -41,8 +42,10 @@ export default function RootLayout({
       className={`${cormorant.variable} ${isabella.variable}`}
     >
       <body className="font-cormorant antialiased">
-        <Navbar />
-        {children}
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -6,17 +6,21 @@ import logo from "@/assets/LOGO/chutranghong.png";
 import highlight from "@/assets/square frames/highlight.png";
 import soundIcon from "@/assets/buttons/sound.png";
 import shareIcon from "@/assets/buttons/share.png";
-import languageIcon from "@/assets/buttons/language.png";
+import LanguageDropdown from "./LanguageDropdown";
+import { useLocale } from "./LocaleProvider";
+import { navLabels } from "@/lib/locale";
 
 const links = [
-  { href: "#home", id: "home", label: "Home" },
-  { href: "#characters", id: "characters", label: "Characters" },
-  { href: "#news", id: "news", label: "News" },
-  { href: "#features", id: "features", label: "Features" },
+  { href: "#home", id: "home" as const },
+  { href: "#characters", id: "characters" as const },
+  { href: "#news", id: "news" as const },
+  { href: "#features", id: "features" as const },
 ];
 
 export default function Navbar() {
+  const { locale } = useLocale();
   const [activeSection, setActiveSection] = useState("home");
+  const labels = navLabels[locale];
 
   useEffect(() => {
     const sections = links
@@ -101,7 +105,7 @@ export default function Navbar() {
                       : "flex h-full cursor-pointer items-center justify-center px-7 font-isabella text-2xl text-[#F1E5D5] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(241,229,213,0.55)] active:scale-95"
                   }
                 >
-                  {link.label}
+                  {labels[link.id]}
                 </a>
               </li>
             );
@@ -118,7 +122,7 @@ export default function Navbar() {
         <div className="flex items-center gap-5">
           <IconButton src={soundIcon} label="Toggle sound" />
           <IconButton src={shareIcon} label="Share" />
-          <IconButton src={languageIcon} label="Language" />
+          <LanguageDropdown />
         </div>
       </div>
     </nav>

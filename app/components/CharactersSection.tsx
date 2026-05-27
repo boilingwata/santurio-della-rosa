@@ -14,6 +14,8 @@ import vespera from "@/assets/characters/VESPERA.png";
 import characterInfoData from "@/assets/info.json";
 import sideFrame from "@/assets/square frames/FRAME H - FLOWER.png";
 import infoFrame from "@/assets/square frames/FRAME W - LIGHT.png";
+import { useLocale } from "./LocaleProvider";
+import { characterStatLabels } from "@/lib/locale";
 
 const characters = [
   { id: "liora", name: "Liora", image: liora },
@@ -28,10 +30,12 @@ const characters = [
 type CharacterInfoEntry = (typeof characterInfoData.characters)[number];
 
 export default function CharactersSection() {
+  const { locale } = useLocale();
   const [selectedIndex, setSelectedIndex] = useState(0);
   const selectedCharacter = characters[selectedIndex];
   const selectedInfo = getCharacterInfo(selectedCharacter.id);
   const visibleCharacters = getVisibleCharacters(selectedIndex);
+  const statLabels = characterStatLabels[locale];
 
   const selectPrevious = () => {
     setSelectedIndex((currentIndex) =>
@@ -156,23 +160,26 @@ export default function CharactersSection() {
           {selectedInfo ? (
             <div className="absolute inset-[clamp(96px,22%,128px)_clamp(88px,18%,120px)_clamp(92px,20.5%,124px)_clamp(88px,18%,120px)] z-0 flex min-h-0 flex-col overflow-y-auto">
               <h2 className="shrink-0 font-cormorant text-[clamp(1.5rem,2.2vw,2.125rem)] font-semibold uppercase tracking-[0.12em] text-[#F1E5D5]">
-                {selectedInfo.name.vi.toUpperCase()}
+                {selectedInfo.name[locale].toUpperCase()}
               </h2>
               <div
                 aria-hidden="true"
                 className="mt-2 mb-4 h-px w-full max-w-[14rem] shrink-0 bg-[#F1E5D5]/55"
               />
               <p className="shrink-0 font-cormorant text-[clamp(0.875rem,0.95vw,1rem)] leading-[1.65] text-[#c4bab0]">
-                {selectedInfo.description.vi}
+                {selectedInfo.description[locale]}
               </p>
               <dl className="mt-auto shrink-0 space-y-1 pt-4 font-cormorant text-[clamp(0.875rem,0.92vw,1rem)] leading-snug">
-                <InfoDetail label="Độ tuổi" value={String(selectedInfo.age)} />
+                <InfoDetail label={statLabels.age} value={String(selectedInfo.age)} />
                 <InfoDetail
-                  label="Chiều cao"
+                  label={statLabels.height}
                   value={`${selectedInfo.height_cm} cm`}
                 />
-                <InfoDetail label="Phân viện" value={selectedInfo.division.vi} />
-                <InfoDetail label="Vai trò" value={selectedInfo.role.vi} />
+                <InfoDetail
+                  label={statLabels.division}
+                  value={selectedInfo.division[locale]}
+                />
+                <InfoDetail label={statLabels.role} value={selectedInfo.role[locale]} />
               </dl>
             </div>
           ) : null}
